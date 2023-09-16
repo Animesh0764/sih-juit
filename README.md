@@ -1,1 +1,0 @@
-# hackathon-sponsor-website
