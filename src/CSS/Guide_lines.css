@@ -1,0 +1,44 @@
+.guideline{
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.guideHeading{
+  padding: 1rem;
+  font-size: 1.5rem;
+  /* text-decoration: underline; */
+}
+.guideTitle{
+  font-weight: 600;
+  color: #1C1777;
+  /* font-style: italic; */
+}
+.guideDescription{
+  font-weight: 100;
+}
+.guideDescription:hover{
+  background-color: rgba(240, 248, 255, 0.2);
+  cursor:default;
+  /* border-radius: 25px;
+  white-space: normal;
+  overflow: visible;
+  text-overflow:ellipsis;
+  max-width: none; */
+}
+li{
+  margin: 1rem;
+}
+
+/* Description */
+.guideDescription {
+  border-radius: 25px;
+  white-space: normal;
+  overflow: visible;
+  text-overflow:ellipsis;
+  max-width: none;
+  /* transition: max-width 0.01s ease; */
+}
+/* li:hover .guideDescription {
+  max-width: 100%; 
+  background-color: rgba(240, 248, 255, 0.2);
+} */

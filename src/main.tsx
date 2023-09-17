@@ -1,16 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
-import './Guide_lines.css'
+
+//Components
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import Guidelines from './components/Guide_lines';
+
+//CSS
+import './CSS/index.css'
+import './CSS/Guide_lines.css'
+import './CSS/HeaderFooter.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <h1>Hello</h1>
+    <Navbar/>
+    <Guidelines />
+    <Footer/>
   </React.StrictMode>,
 )
-ReactDOM.createRoot(document.getElementById('guide')!).render(
-  <React.StrictMode>
-    <Guidelines />
-  </React.StrictMode>,
-);
