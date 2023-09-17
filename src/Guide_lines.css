@@ -6,24 +6,24 @@
 .guideHeading{
   padding: 1rem;
   font-size: 1.5rem;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .guideTitle{
-  font-style: italic;
   font-weight: 600;
   color: #1C1777;
+  /* font-style: italic; */
 }
 .guideDescription{
   font-weight: 100;
 }
 .guideDescription:hover{
   background-color: rgba(240, 248, 255, 0.2);
-  border-radius: 25px;
+  cursor:default;
+  /* border-radius: 25px;
   white-space: normal;
   overflow: visible;
   text-overflow:ellipsis;
-  max-width: none;
-  cursor:default;
+  max-width: none; */
 }
 li{
   margin: 1rem;
@@ -31,14 +31,14 @@ li{
 
 /* Description */
 .guideDescription {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: inline-block;
-  max-width: 700px;
-  transition: max-width 0.01s ease;
+  border-radius: 25px;
+  white-space: normal;
+  overflow: visible;
+  text-overflow:ellipsis;
+  max-width: none;
+  /* transition: max-width 0.01s ease; */
 }
-li:hover .guideDescription {
+/* li:hover .guideDescription {
   max-width: 100%; 
   background-color: rgba(240, 248, 255, 0.2);
-}
+} */
