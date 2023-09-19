@@ -1,12 +1,6 @@
 
 export const Sponsers = () => {
 
-    interface Sponsor {
-        img: string;
-        title: string;
-        desc: string;
-    }
-
     const sponsor = [
         {
             img: '',
@@ -35,14 +29,15 @@ export const Sponsers = () => {
         );
     };
 
-    const Sponser = ({img, title, desc}) => {
-        return (
-            <article className="Sponser">
-                <img src={img} alt={title} />
-                <h5>{desc}</h5>
-            </article>
-        );
-    };
+    const Sponser: React.FC<{ img: string; title: string; desc: string }> = ({ img, title, desc }) => {
+    return (
+        <article className="Sponser">
+            <img src={img} alt={title} />
+            <h5>{desc}</h5>
+        </article>
+    );
+};
+
 
 return (
     <div>
