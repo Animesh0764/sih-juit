@@ -1,6 +1,12 @@
 
 export const Sponsers = () => {
 
+    interface Sponsor {
+        img: string;
+        title: string;
+        desc: string;
+    }
+
     const sponsor = [
         {
             img: '',
