@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 interface Guide {
   title: string;
@@ -38,7 +38,7 @@ const Guidelines = () => {
   ]);
 
   return (
-    <div className='guideline'>   
+    <div className='guideline' style={{padding: '120px'}}>   
       <div className='guideHeading'>Guidelines</div>
       <ol className='guideDesc'>
         {guidelines.map((guide, index) => (

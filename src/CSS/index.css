@@ -28,3 +28,9 @@ h1,h2,h3,h4,h5,h6{
   color: var(--blue-color);
   font-family: var(--font-300);
 }
+
+.custom-fontsize{
+  color: whitesmoke;
+  font-family: var(--font-300);
+  font-size: 50px;
+}

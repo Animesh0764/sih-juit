@@ -1,20 +1,27 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 //Components
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import Guidelines from './components/Guide_lines';
+import About from "./components/About";
+import CountDownTimer from "./components/Countdown";
+import Footer from "./components/Footer";
+import Guidelines from "./components/Guide_lines";
+import Navbar from "./components/Navbar";
+import Sponsers from "./components/Sponsers";
 
 //CSS
-import './CSS/index.css'
-import './CSS/Guide_lines.css'
-import './CSS/HeaderFooter.css'
+import "./CSS/About.css";
+import "./CSS/Guide_lines.css";
+import "./CSS/HeaderFooter.css";
+import "./CSS/index.css";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <Navbar/>
+    <Navbar />
+    <CountDownTimer days={11} hours={1} minutes={20} seconds={40} />
+    <About />
+    <Sponsers />
     <Guidelines />
-    <Footer/>
-  </React.StrictMode>,
-)
+    <Footer />
+  </React.StrictMode>
+);
