@@ -17,7 +17,7 @@ export const Sponsers = () => {
 
   const SponserCard = () => {
     return (
-      <section className="SponserCard">
+      <section className="SponserCard" id='sponsors'>
         {sponsor.map((spon) => {
           return <Sponser {...spon} />;
         })}
