@@ -21,25 +21,37 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToSection = (id: string) => {
+    if(id==='home'){
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }else{
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className={`navbar ${isNavbarOpaque ? "opaque" : ""}`}>
       <div className="navbar-container">
         <FaBars className="checkbtn" onClick={toggleMenu} />
         <ul className={`navbar-menu ${isMenuOpen ? "open" : ""}`}>
           <li>
-            <a href="/">Home</a>
+            <a onClick={() => scrollToSection("home")}>Home</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a onClick={() => scrollToSection("about")}>About</a>
           </li>
           <li>
-            <a href="#guidelines">Guidelines</a>
+            <a onClick={() => scrollToSection("guidelines")}>Guidelines</a>
           </li>
           <li>
-            <a href="#sponsors">Sponsors</a>
+            <a onClick={() => scrollToSection("sponsors")}>Sponsors</a>
           </li>
           <li>
-            <a href="#register">Register</a>
+            <a onClick={() => scrollToSection("register")}>Register</a>
           </li>
         </ul>
       </div>

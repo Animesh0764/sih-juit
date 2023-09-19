@@ -28,7 +28,7 @@ export const Sponsers = () => {
     desc,
   }) => {
     return (
-      <article className="Sponser">
+      <article className="Sponser" id='sponsors'>
         <img src={img} alt={title} />
         <h5>{desc}</h5>
       </article>

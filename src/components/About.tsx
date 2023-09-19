@@ -1,35 +1,20 @@
-const About = () => {
+const About= () => {
   return (
     <>
-      <div className="inner-text">
-        <div className="container" style={{ backgroundColor: "transparent" }}>
-          <h3
-            className="sih"
-            style={{
-              backgroundColor: "transparent",
-              color: "#1C1777",
-              paddingBottom: "20px",
-              fontSize: "50px",
-            }}
-          >
-            SMART INDIA HACKATHON
+      <div className="inner-text" id='about'>
+        <div className="container">
+        {/* <div className="guideHeading">About</div> */}
+          <h3 className="sih">
+            ABOUT SMART INDIA HACKATHON
           </h3>
-          <p
-            className="about"
-            style={{
-              backgroundColor: "transparent",
-              color: "black",
-              font: "Poppins",
-              fontSize: "small",
-            }}
-          >
+          <p className="about">
             The "Smart India Hackathon" is an initiative that aims to promote
-            innovation and problem- solving through hackathons. It is organized
+            innovation and problem-solving through hackathons. It is organized
             by the Ministry of Education, Government of India, along with
-            various othergovernment departments and agencies. The primary goal
+            various other government departments and agencies. The primary goal
             of the Smart India Hackathon is to harness the creativity and
             technical skills of students to address real-world problems faced by
-            government and industry. It also encourage students to develop
+            government and industry. It also encourages students to develop
             convincing solutions to challenges faced by different government
             departments and industries.
             <br />
@@ -41,8 +26,8 @@ const About = () => {
             of such companies and government organizations that sponsor or
             participate in SIH use it as a talent scouting platform. SIH not
             only offers a unique opportunity to work on problem statements
-            provided by government departments and organizations which provides
-            exposure and helps participants understand and address real-world
+            provided by government departments and organizations which provide
+            exposure and help participants understand and address real-world
             issues, which is valuable for personal and professional growth but
             also provides an excellent platform for networking where
             participants can interact with mentors, industry experts, and

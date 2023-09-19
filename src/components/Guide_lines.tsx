@@ -45,7 +45,7 @@ const Guidelines = () => {
   ]);
 
   return (
-    <div className="guideline">
+    <div className="guideline"  id='guidelines'>
       <div className="guideHeading">Guidelines</div>
       <ol className="guideDesc">
         {guidelines.map((guide, index) => (

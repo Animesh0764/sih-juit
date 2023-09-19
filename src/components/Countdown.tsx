@@ -40,15 +40,15 @@ const CountDownTimer = ({ days=0, hours = 0, minutes = 0, seconds = 60 }: ICount
 
     
     return (
-            <div className='wrapper' style={{padding: '80px', backgroundColor: '#1c1777'}}>
-            <center>
-            <h1  style={{fontSize: '50px',backgroundColor: '#1c1777', color: 'white',}}>Time until SIH:</h1>
-            <div className='custom-fontsize' style={{backgroundColor: '#1c1777'}}>{`${time.days.toString().padStart(2, '0')}:${time.hours.toString().padStart(2, '0')}:${time.minutes
-        .toString()
-        .padStart(2, '0')}:${time.seconds.toString().padStart(2, '0')}`}</div>
-            <h2  style={{backgroundColor: '#1c1777', color: 'white',}}>Set yourself tight for the most awaited Hackathon!</h2>
-            </center>
-        </div>
+            <div className='wrapper' style={{padding: '80px', backgroundColor: '#1c1777'}} id="home">
+                <center>
+                    <h1  style={{fontSize: '50px',backgroundColor: '#1c1777', color: 'white',}}>Time until SIH:</h1>
+                        <div className='custom-fontsize' style={{backgroundColor: '#1c1777'}}>{`${time.days.toString().padStart(2, '0')}:${time.hours.toString().padStart(2, '0')}:${time.minutes
+                    .toString()
+                    .padStart(2, '0')}:${time.seconds.toString().padStart(2, '0')}`}</div>
+                    <h2  style={{backgroundColor: '#1c1777', color: 'white',}}>Set yourself tight for the most awaited Hackathon!</h2>
+                </center>
+            </div>
         
     );
 }

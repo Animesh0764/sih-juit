@@ -1,17 +1,16 @@
 .guideline {
-  margin: 2rem;
+  margin: 1rem 2rem 2rem 2rem;
   padding: 2rem;
   border-radius: 10px;
 }
 .guideHeading {
   font-size: 3rem;
-  /* text-decoration: underline; */
+  margin: 3rem 0 0 0;
 }
 .guideTitle {
   font-weight: 400;
   color: #1c1777;
   margin-bottom: 0.3rem;
-  /* font-style: italic; */
 }
 .guideDescription {
   font-weight: 300;
