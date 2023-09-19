@@ -1,56 +1,57 @@
-import React from 'react';
-import './Navbar';
+    import { useEffect, useState } from 'react';
+import '../CSS/CountDown.css';
 
-interface ICountdown {
-    days: number;
-    hours: number;
-    minutes: number;
-    seconds: number;
-}
+    const targetDate = new Date('2023-09-23T00:00:00Z');
 
-const CountDownTimer = ({ days=0, hours = 0, minutes = 0, seconds = 60 }: ICountdown) => {
-    
+    const CountDownTimer = () => {
+    const calculateTimeLeft = () => {
+        const now = new Date();
+        const difference = targetDate.getTime() - now.getTime();
 
-    const [time, setTime] = React.useState<ICountdown>({days, hours, minutes, seconds});
-    
+        if (difference <= 0) {
+        return {
+            days: 0,
+            hours: 0,
+            minutes: 0,
+            seconds: 0,
+        };
+        }
 
-    const tick = () => {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((difference / 1000 / 60) % 60);
+        const seconds = Math.floor((difference / 1000) % 60);
 
-        if (time.days ===0 && time.hours === 0 && time.minutes === 0 && time.seconds === 0)
-            reset()
-            else if (time.hours === 0 && time.minutes === 0 && time.seconds === 0) {
-                setTime({ days: time.days - 1, hours: 23, minutes: 59, seconds: 59 });
-            } else if (time.minutes === 0 && time.seconds === 0) {
-                setTime({ days: time.days, hours: time.hours - 1, minutes: 59, seconds: 59 });
-            } else if (time.seconds === 0) {
-                setTime({ days: time.days, hours: time.hours, minutes: time.minutes - 1, seconds: 59 });
-            } else {
-                setTime({ days: time.days, hours: time.hours, minutes: time.minutes, seconds: time.seconds - 1 });
-            }
-            };
+        return {
+        days,
+        hours,
+        minutes,
+        seconds,
+        };
+    };
 
+    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-    const reset = () => setTime({days: time.days, hours: time.hours, minutes: time.minutes, seconds: time.seconds});
+    useEffect(() => {
+        const timer = setInterval(() => {
+        setTimeLeft(calculateTimeLeft());
+        }, 1000);
 
-    
-    React.useEffect(() => {
-        const timerId = setInterval(() => tick(), 1000);
-        return () => clearInterval(timerId);
-    });
+        return () => {
+        clearInterval(timer);
+        };
+    }, []);
 
-    
     return (
-            <div className='wrapper' style={{padding: '80px', backgroundColor: '#1c1777'}} id="home">
-                <center>
-                    <h1  style={{fontSize: '50px',backgroundColor: '#1c1777', color: 'white',}}>Time until SIH:</h1>
-                        <div className='custom-fontsize' style={{backgroundColor: '#1c1777'}}>{`${time.days.toString().padStart(2, '0')}:${time.hours.toString().padStart(2, '0')}:${time.minutes
-                    .toString()
-                    .padStart(2, '0')}:${time.seconds.toString().padStart(2, '0')}`}</div>
-                    <h2  style={{backgroundColor: '#1c1777', color: 'white',}}>Set yourself tight for the most awaited Hackathon!</h2>
-                </center>
-            </div>
-        
+        <div className='card-glass'>
+        <center>
+            <div className='custom-fontsize'>{`${timeLeft.days.toString().padStart(2, '0')}:${timeLeft.hours.toString().padStart(2, '0')}:${timeLeft.minutes
+            .toString()
+            .padStart(2, '0')}:${timeLeft.seconds.toString().padStart(2, '0')}`}</div>
+            <h2>Set yourself tight for the most awaited Hackathon!</h2>
+        </center>
+        </div>
     );
-}
+    }
 
-export default CountDownTimer;
+    export default CountDownTimer;

@@ -1,3 +1,6 @@
+import React from 'react';
+import '../CSS/Sponser.css';
+
 export const Sponsers = () => {
   const sponsor = [
     {
@@ -14,7 +17,7 @@ export const Sponsers = () => {
 
   const SponserCard = () => {
     return (
-      <section>
+      <section className="SponserCard">
         {sponsor.map((spon) => {
           return <Sponser {...spon} />;
         })}
@@ -28,10 +31,12 @@ export const Sponsers = () => {
     desc,
   }) => {
     return (
-      <article className="Sponser" id='sponsors'>
+      <>
+      <article className="Sponser">
         <img src={img} alt={title} />
         <h5>{desc}</h5>
       </article>
+      </>
     );
   };
 
