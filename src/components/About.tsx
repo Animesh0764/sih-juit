@@ -1,11 +1,10 @@
-import React from 'react'
 
 const About = () => {
   return (
     <>
     
  
-    <div className='inner-text'>
+    <div className='inner-text' style={{padding: '120px'}}>
       <div className="container" style={{backgroundColor: 'transparent'}}>
         <h3 className = 'sih' style={{backgroundColor: 'transparent', color:'#1C1777', paddingBottom:'20px', fontSize :'50px'}}>SMART INDIA HACKATHON</h3>
         <p className='about' style={{backgroundColor: 'transparent' , color : 'black' , font : 'Poppins' , fontSize : 'small' }}>
