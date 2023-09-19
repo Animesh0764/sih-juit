@@ -1,31 +1,22 @@
-.guideline{
+.guideline {
   margin: 2rem;
   padding: 2rem;
   border-radius: 10px;
 }
-.guideHeading{
-  padding: 1rem;
-  font-size: 1.5rem;
+.guideHeading {
+  font-size: 3rem;
   /* text-decoration: underline; */
 }
-.guideTitle{
-  font-weight: 600;
-  color: #1C1777;
+.guideTitle {
+  font-weight: 400;
+  color: #1c1777;
+  margin-bottom: 0.3rem;
   /* font-style: italic; */
 }
-.guideDescription{
-  font-weight: 100;
+.guideDescription {
+  font-weight: 300;
 }
-.guideDescription:hover{
-  background-color: rgba(240, 248, 255, 0.2);
-  cursor:default;
-  /* border-radius: 25px;
-  white-space: normal;
-  overflow: visible;
-  text-overflow:ellipsis;
-  max-width: none; */
-}
-li{
+li {
   margin: 1rem;
 }
 
@@ -34,11 +25,7 @@ li{
   border-radius: 25px;
   white-space: normal;
   overflow: visible;
-  text-overflow:ellipsis;
+  text-overflow: ellipsis;
   max-width: none;
   /* transition: max-width 0.01s ease; */
 }
-/* li:hover .guideDescription {
-  max-width: 100%; 
-  background-color: rgba(240, 248, 255, 0.2);
-} */

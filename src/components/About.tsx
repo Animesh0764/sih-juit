@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <>
-      <div className="inner-text" style={{ padding: "120px" }}>
+      <div className="inner-text">
         <div className="container" style={{ backgroundColor: "transparent" }}>
           <h3
             className="sih"
