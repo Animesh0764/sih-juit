@@ -1,40 +1,50 @@
-import { useEffect, useState } from 'react';
-import { FaBars } from 'react-icons/fa';
+import { useEffect, useState } from "react";
+import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
-    const [isNavbarOpaque, setIsNavbarOpaque] = useState(false);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isNavbarOpaque, setIsNavbarOpaque] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsNavbarOpaque(window.scrollY > 0);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsNavbarOpaque(window.scrollY > 0);
     };
 
-    return (
-        <nav className={`navbar ${isNavbarOpaque ? 'opaque' : ''}`}>
-            <div className="navbar-container">
-                <FaBars className="checkbtn" onClick={toggleMenu} />
-                <ul className={`navbar-menu ${isMenuOpen ? 'open' : ''}`}>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    );
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <nav className={`navbar ${isNavbarOpaque ? "opaque" : ""}`}>
+      <div className="navbar-container">
+        <FaBars className="checkbtn" onClick={toggleMenu} />
+        <ul className={`navbar-menu ${isMenuOpen ? "open" : ""}`}>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#guidelines">Guidelines</a>
+          </li>
+          <li>
+            <a href="#sponsors">Sponsors</a>
+          </li>
+          <li>
+            <a href="#register">Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;
