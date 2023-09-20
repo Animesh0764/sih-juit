@@ -1,4 +1,5 @@
-const About= () => {
+import '../CSS/About.css';
+const About = () => {
   return (
     <>
       <div className="inner-text" id='about'>

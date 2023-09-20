@@ -29,7 +29,7 @@
 }
 
 body {
-    background-color: var(--primary-color);
+    background-color: whitesmoke!important;
     font-family: var(--font-300);
     color: var(--blue-color);
     overflow-x: hidden;
@@ -69,9 +69,8 @@ h6 {
 }
 
 .sih{
-    text-shadow: 4px 3px 4px black;
     background-color: transparent;
-    color: var(--blue-color);
+    color: black;
     padding-bottom: 20px;
     font-size: 50px;
 }

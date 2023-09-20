@@ -2,6 +2,7 @@
   margin: 1rem 2rem 2rem 2rem;
   padding: 2rem;
   border-radius: 10px;
+  background-color: #eeeeff;
 }
 .guideHeading {
   font-size: 3rem;
@@ -9,7 +10,7 @@
 }
 .guideTitle {
   font-weight: 400;
-  color: #1c1777;
+  color: black;
   margin-bottom: 0.3rem;
 }
 .guideDescription {
