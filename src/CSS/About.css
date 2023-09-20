@@ -30,7 +30,6 @@
 
 body {
     background-color: var(--primary-color);
-    font-family: var(--font-300);
     color: var(--blue-color);
     overflow-x: hidden;
 }
@@ -48,7 +47,7 @@ h6 {
 .container{
     position: relative;
     background-color: transparent;
-    padding: 0 3rem;
+    padding: 0 6%;
     text-align: center;
     margin-top: 4rem;
 }
@@ -60,16 +59,16 @@ h6 {
     left: 10%;
     z-index: 10;
     padding-top: 20px;
-    padding-bottom: 20px;
     color: var(--gray-color);
     opacity: 1;
-    background-color: transparent;
-    font-style: var(--font-500);
+    background-color: white;
+    font-style: var(--font-300);
     text-align: center;
+    padding-bottom: 7rem;
 }
 
 .sih{
-    text-shadow: 4px 3px 4px black;
+    /* text-shadow: 4px 3px 4px black; */
     background-color: transparent;
     color: var(--blue-color);
     padding-bottom: 20px;

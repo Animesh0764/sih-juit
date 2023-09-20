@@ -6,6 +6,10 @@
   --orange-color: #f75700;
   --green-color: #30c038;
   --gray-color: #9c937d;
+  --font-100: "Poppins", sans-serif;
+  font-weight: 100;
+  --font-200: "Poppins", sans-serif;
+  font-weight: 200;
   --font-300: "Poppins", sans-serif;
   font-weight: 300;
   --font-400: "Poppins", sans-serif;
@@ -40,7 +44,7 @@ h4,
 h5,
 h6 {
   color: var(--blue-color);
-  font-family: var(--font-300);
+  font-family: var(--font-100);
 }
 
 .custom-fontsize {

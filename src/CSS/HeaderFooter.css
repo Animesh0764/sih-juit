@@ -6,6 +6,11 @@
   --orange-color: #f75700;
   --green-color: #30c038;
   --gray-color: #9c937d;
+  --black-color: #000;
+  --font-100: "Poppins", sans-serif;
+  font-weight: 100;
+  --font-200: "Poppins", sans-serif;
+  font-weight: 200;
   --font-300: "Poppins", sans-serif;
   font-weight: 300;
   --font-400: "Poppins", sans-serif;
@@ -30,7 +35,7 @@
 
 body {
   background-color: var(--primary-color);
-  font-family: var(--font-300);
+  font-family: var(--font-100);
   color: var(--blue-color);
   overflow-x: hidden;
 }
@@ -66,14 +71,14 @@ h6 {
 .navbar li {
   margin: 0 1.5rem;
   padding: 1rem 0.5rem;
-  font-family: var(--font-300);
   font-size: 1.5rem;
 }
 
 .navbar a {
   text-decoration: none;
-  color: var(--orange-color);
+  color: var(--black-color);
   position: relative;
+  font-family: var(--font-100) !important;
   transition: color 0.3s ease-in-out;
 }
 
