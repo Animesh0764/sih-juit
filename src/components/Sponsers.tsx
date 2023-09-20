@@ -1,6 +1,5 @@
 import React from 'react';
 import '../CSS/Sponser.css';
-
 export const Sponsers = () => {
   const sponsor = [
     {

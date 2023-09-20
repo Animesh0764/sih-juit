@@ -11,8 +11,10 @@ import Sponsers from "./components/Sponsers";
 
 //CSS
 import "./CSS/About.css";
+import './CSS/CountDown.css'; 
 import "./CSS/Guide_lines.css";
 import "./CSS/HeaderFooter.css";
+import './CSS/Sponser.css';
 import "./CSS/index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

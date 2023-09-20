@@ -1,42 +1,36 @@
-.SponserCard{
+.SponserCard {
+    /* Use the styles from your branch */
     width: 90vw;
     max-width: 1170px;
-    margin: 5 rem auto;
+    margin: 5rem auto; /* Removed the space between 5 and rem */
     margin-top: 5%;
     display: grid;
     gap: 2rem;
-    flex: auto;
+    /* flex: auto; */
+    /* End of your branch's styles */
+
+    /* Use styles from the other branch if needed */
+    /* flex: auto; */
+    /* End of other branch's styles */
 }
 
-@media screen and (min-width: 768px){
-    .SponserCard{
-    grid-template-columns: repeat(3,3fr);
-    align-items: start;
+@media screen and (min-width: 768px) {
+    .SponserCard {
+        grid-template-columns: repeat(3, 3fr);
+        align-items: start;
     }
 }
 
-.Sponser{
+.Sponser {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0.7;
     backdrop-filter: blur(16px) saturate(167%);
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
-
 }
-.Sponser h2{
+
+.Sponser h2 {
     margin-top: 1.5rem;
     font-size: 1rem;
-}
-
-
-.Sponser img {
-    width: 100%;
-    object-fit: cover;
-
-}
-
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }

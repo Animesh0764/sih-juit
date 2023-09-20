@@ -1,21 +1,20 @@
-    import { useEffect, useState } from 'react';
-import '../CSS/CountDown.css';
-import sihlogo from '../assets/sih-logo.png';
+import { useEffect, useState } from 'react';
+import sihlogo from '../assets/sih-logo.png'; // Import the image here
 
-    const targetDate = new Date('2023-09-23T00:00:00Z');
+const targetDate = new Date('2023-09-23T00:00:00Z');
 
-    const CountDownTimer = () => {
+const CountDownTimer = () => {
     const calculateTimeLeft = () => {
         const now = new Date();
         const difference = targetDate.getTime() - now.getTime();
 
         if (difference <= 0) {
-        return {
-            days: 0,
-            hours: 0,
-            minutes: 0,
-            seconds: 0,
-        };
+            return {
+                days: 0,
+                hours: 0,
+                minutes: 0,
+                seconds: 0,
+            };
         }
 
         const days = Math.floor(difference / (1000 * 60 * 60 * 24));
@@ -24,10 +23,10 @@ import sihlogo from '../assets/sih-logo.png';
         const seconds = Math.floor((difference / 1000) % 60);
 
         return {
-        days,
-        hours,
-        minutes,
-        seconds,
+            days,
+            hours,
+            minutes,
+            seconds,
         };
     };
 
@@ -35,28 +34,27 @@ import sihlogo from '../assets/sih-logo.png';
 
     useEffect(() => {
         const timer = setInterval(() => {
-        setTimeLeft(calculateTimeLeft());
+            setTimeLeft(calculateTimeLeft());
         }, 1000);
 
         return () => {
-        clearInterval(timer);
+            clearInterval(timer);
         };
     }, []);
 
     return (
         <div className='card-glass'>
-        <div className='counter'>
-            <div className='custom-fontsize'>{`${timeLeft.days.toString().padStart(2, '0')}:${timeLeft.hours.toString().padStart(2, '0')}:${timeLeft.minutes
-            .toString()
-            .padStart(2, '0')}:${timeLeft.seconds.toString().padStart(2, '0')}`}</div>
-            <h2>Set yourself tight for the most awaited Hackathon!</h2>
+            <div className='counter'>
+                <div className='custom-fontsize'>{`${timeLeft.days.toString().padStart(2, '0')}:${timeLeft.hours.toString().padStart(2, '0')}:${timeLeft.minutes
+                    .toString()
+                    .padStart(2, '0')}:${timeLeft.seconds.toString().padStart(2, '0')}`}</div>
+                <h2>Set yourself tight for the most awaited Hackathon!</h2>
             </div>
             <div className='logo-sih'>
-                <img src= {sihlogo} alt="SIH-Logo" />
-
+                <img src={sihlogo} alt="SIH-Logo" />
             </div>
         </div>
     );
-    }
+};
 
-    export default CountDownTimer;
+export default CountDownTimer;
