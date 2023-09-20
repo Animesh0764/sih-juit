@@ -2,7 +2,7 @@
 import { AiOutlineInstagram, AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
 
 //Assets
-import acmLogo from '../assets/acmLogo.png';
+import acmLogo from '../assets/acmLogo.webp';
 
 const Footer = () => {
     return (

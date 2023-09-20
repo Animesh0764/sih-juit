@@ -30,3 +30,16 @@ li {
   max-width: none;
   /* transition: max-width 0.01s ease; */
 }
+
+/* media queries */
+@media (max-width: 665px) {
+  .guideline {
+    padding: 1.05rem 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .guideline {
+    padding: 1.05rem 1rem;
+  }
+}

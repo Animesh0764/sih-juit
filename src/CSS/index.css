@@ -24,6 +24,7 @@
   font-weight: 800;
   --font-900: "Poppins", sans-serif;
   font-weight: 900;
+  width: 100%;
 }
 
 html::-webkit-scrollbar {
@@ -38,7 +39,6 @@ html::-webkit-scrollbar {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,

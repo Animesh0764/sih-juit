@@ -36,7 +36,6 @@ body {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -85,6 +84,16 @@ h6 {
         right: 5%;
         left: 5%;
     }
+
+    .container {
+        padding: 0rem 4rem;
+    }
+}
+
+@media (max-width: 665px) {
+    .container {
+        padding: 0rem 4rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -92,5 +101,15 @@ h6 {
         right: 3%;
         left: 3%;
         padding: 10px;
+    }
+}
+
+@media (max-width: 450px){
+    .sih{
+        font-size: 30px;
+    }
+
+    .container {
+        padding: 0rem 2rem;
     }
 }

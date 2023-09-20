@@ -14,14 +14,48 @@
 }
 
 .h2{
-    padding: 3rem;
+    margin-left: 12rem !important;
 }
 
+.register-btn {
+    display: inline;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.register-btn a{
+    text-decoration: none;
+}
+
+.register-btn:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+}
 
 .counter {
     flex: 1;
+    text-align: end;
 }
 
 .logo-sih {
     flex: 0;
+}
+
+@media (max-width: 635px){
+    .card-glass{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .counter {
+        flex: 1;
+        text-align: center;
+    }
 }
