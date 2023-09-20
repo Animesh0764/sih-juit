@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import CountDownTimer from "./components/Countdown";
 import About from "./components/About";
 import Guidelines from "./components/Guide_lines";
-import Sponsers from "./components/Sponsers";
+// import Sponsers from "./components/Sponsers";
 import Footer from "./components/Footer";
 
 //CSS
@@ -23,7 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <CountDownTimer />
     <About />
     <Guidelines />
-    <Sponsers />
+    {/* <Sponsers /> */}
     <Footer />
   </React.StrictMode>
 );

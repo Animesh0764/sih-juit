@@ -1,7 +1,9 @@
 .guideline {
   margin: 1rem 2rem 2rem 2rem;
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 2rem;
   border-radius: 10px;
+  background-color: #eeeeff;
+  padding: 1.05rem 4rem;
 }
 .guideHeading {
   font-size: 3rem;
@@ -9,12 +11,11 @@
 }
 .guideTitle {
   font-weight: 700;
-  color: #1c1777;
+  color: black;
   margin-bottom: 0.3rem;
 }
 .guideDescription {
-  font-weight: 400;
-  font-size: 1rem;
+  font-weight: 500;
 }
 li {
   margin: 1rem;

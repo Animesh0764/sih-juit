@@ -29,7 +29,8 @@
 }
 
 body {
-    background-color: var(--primary-color);
+    background-color: whitesmoke!important;
+    font-family: var(--font-300);
     color: var(--blue-color);
     overflow-x: hidden;
 }
@@ -47,9 +48,14 @@ h6 {
 .container{
     position: relative;
     background-color: transparent;
-    padding: 0 6%;
+    padding: 0 8rem;
     text-align: center;
     margin-top: 4rem;
+}
+
+.about{
+    font-weight: 600;
+    color: #726b5b;
 }
 
 .inner-text{
@@ -59,18 +65,17 @@ h6 {
     left: 10%;
     z-index: 10;
     padding-top: 20px;
+    padding-bottom: 20px;
     color: var(--gray-color);
     opacity: 1;
-    background-color: white;
-    font-style: var(--font-300);
+    background-color: transparent;
+    font-style: var(--font-500);
     text-align: center;
-    padding-bottom: 7rem;
 }
 
 .sih{
-    /* text-shadow: 4px 3px 4px black; */
     background-color: transparent;
-    color: var(--blue-color);
+    color: black;
     padding-bottom: 20px;
     font-size: 50px;
 }
