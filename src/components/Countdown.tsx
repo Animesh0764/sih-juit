@@ -1,5 +1,6 @@
     import { useEffect, useState } from 'react';
 import '../CSS/CountDown.css';
+import sihlogo from '../assets/sih-logo.png';
 
     const targetDate = new Date('2023-09-23T00:00:00Z');
 
@@ -44,12 +45,16 @@ import '../CSS/CountDown.css';
 
     return (
         <div className='card-glass'>
-        <center>
+        <div className='counter'>
             <div className='custom-fontsize'>{`${timeLeft.days.toString().padStart(2, '0')}:${timeLeft.hours.toString().padStart(2, '0')}:${timeLeft.minutes
             .toString()
             .padStart(2, '0')}:${timeLeft.seconds.toString().padStart(2, '0')}`}</div>
             <h2>Set yourself tight for the most awaited Hackathon!</h2>
-        </center>
+            </div>
+            <div className='logo-sih'>
+                <img src= {sihlogo} alt="SIH-Logo" />
+
+            </div>
         </div>
     );
     }
