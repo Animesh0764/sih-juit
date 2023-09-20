@@ -50,9 +50,9 @@ const Navbar = () => {
           <li>
             <a onClick={() => scrollToSection("sponsors")}>Sponsors</a>
           </li>
-          <li>
+          {/* <li>
             <a onClick={() => scrollToSection("register")}>Register</a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

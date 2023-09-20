@@ -1,0 +1,42 @@
+.SponserCard{
+    width: 90vw;
+    max-width: 1170px;
+    margin: 5 rem auto;
+    margin-top: 5%;
+    display: grid;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 768px){
+    .SponserCard{
+    grid-template-columns: repeat(3,3fr);
+    align-items: start;
+    }
+}
+
+.Sponser{
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.7;
+    backdrop-filter: blur(16px) saturate(167%);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+
+}
+.Sponser h2{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+
+
+}
+
+.Sponser img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -11,14 +11,16 @@ import Footer from "./components/Footer";
 
 //CSS
 import "./CSS/About.css";
+import './CSS/CountDown.css'; 
 import "./CSS/Guide_lines.css";
 import "./CSS/HeaderFooter.css";
+import './CSS/Sponser.css';
 import "./CSS/index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Navbar />
-    <CountDownTimer days={11} hours={1} minutes={20} seconds={40} />
+    <CountDownTimer />
     <About />
     <Guidelines />
     <Sponsers />

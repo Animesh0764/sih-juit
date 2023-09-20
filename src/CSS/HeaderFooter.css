@@ -49,6 +49,8 @@ h6 {
 .navbar {
   background-color: transparent;
   position: fixed;
+  top: 0;
+  padding-top: 0.1rem;
   width: 100%;
   z-index: 2;
   transition: background-color 0.3s;
