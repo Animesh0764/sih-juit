@@ -46,16 +46,19 @@ return (
         <div className='logo-sih'>
             <img src={sihlogo} alt="SIH-Logo" />
         </div>
+        <div className='btn'>
+            <button className='register-btn'>
+                <a href="https://docs.google.com/forms/d/1ObwsMMXmfAD1hlTHd5ah-6xPm6MB8fVyVfbGYlDOHQE/edit?ts=65084b19" target="_blank" rel="noreferrer">Register now!!</a>
+            </button>
+        </div>
         <div className='counter'>
-            <div className='custom-fontsize'>{`${timeLeft.days.toString().padStart(2, '0')}:${timeLeft.hours.toString().padStart(2, '0')}:${timeLeft.minutes
+            <div className='custom-fontsize'>
+                {`${timeLeft.days.toString().padStart(2, '0')}:${timeLeft.hours.toString().padStart(2, '0')}:${timeLeft.minutes
                 .toString()
-                .padStart(2, '0')}:${timeLeft.seconds.toString().padStart(2, '0')}`}</div>
-                {/* <button className='register-btn'>
-                    <a href="https://www.sih.gov.in/" target="_blank" rel="noreferrer">Visit SIH</a>
-                </button> */}
+                .padStart(2, '0')}:${timeLeft.seconds.toString().padStart(2, '0')}`}
+            </div>
             <h2>Set yourself tight for the most awaited Hackathon!</h2>
         </div>
-        
     </div>
 );
 }

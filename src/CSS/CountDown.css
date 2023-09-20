@@ -5,6 +5,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .custom-fontsize {
@@ -17,25 +20,37 @@
     margin-left: 12rem !important;
 }
 
+.btn{
+    text-align: center;
+    /* margin-left: 31.8rem; */
+}
+
 .register-btn {
-    display: inline;
     padding: 10px 20px;
     background-color: #3498db;
     color: #fff;
+    font-family: "Poppins";
     border: 2px solid #fff;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
+    text-align: center;
 }
 
 .register-btn a{
     text-decoration: none;
+    color: #fff;
 }
 
 .register-btn:hover {
     background-color: #fff;
     border: 2px solid #000;
+    color: #000;
+}
+
+.register-btn a:hover {
+    color: #000;
 }
 
 .counter {
@@ -47,7 +62,8 @@
     flex: 0;
 }
 
-@media (max-width: 635px){
+
+@media (max-width: 900px) {
     .card-glass{
         display: flex;
         flex-direction: column;
